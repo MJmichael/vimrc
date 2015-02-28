@@ -70,8 +70,8 @@ func SetTitle()
 	if &filetype == 'sh' 
 		call setline(1,"\#########################################################################") 
 		call append(line("."), "\# File Name: ".expand("%")) 
-		call append(line(".")+1, "\# Author: ma6174") 
-		call append(line(".")+2, "\# mail: ma6174@163.com") 
+		call append(line(".")+1, "\# Author: fwj") 
+		call append(line(".")+2, "\# mail: fuwenjie2011@126.com") 
 		call append(line(".")+3, "\# Created Time: ".strftime("%c")) 
 		call append(line(".")+4, "\#########################################################################") 
 		call append(line(".")+5, "\#!/bin/bash") 
@@ -79,8 +79,8 @@ func SetTitle()
 	else 
 		call setline(1, "/*************************************************************************") 
 		call append(line("."), "	> File Name: ".expand("%")) 
-		call append(line(".")+1, "	> Author: ma6174") 
-		call append(line(".")+2, "	> Mail: ma6174@163.com ") 
+		call append(line(".")+1, "	> Author: fwj") 
+		call append(line(".")+2, "	> Mail: fuwenjie2011@126.com ") 
 		call append(line(".")+3, "	> Created Time: ".strftime("%c")) 
 		call append(line(".")+4, " ************************************************************************/") 
 		call append(line(".")+5, "")
@@ -104,7 +104,6 @@ endfunc
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "键盘命令
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 nmap <leader>w :w!<cr>
 nmap <leader>f :find<cr>
 
@@ -117,7 +116,7 @@ vmap <C-c> "+y
 "去空行  
 nnoremap <F2> :g/^\s*$/d<CR> 
 "比较文件  
-nnoremap <C-F2> :vert diffsplit 
+nnoremap <F4> :vert diffsplit<CR>
 "新建标签  
 map <M-F2> :tabnew<CR>  
 "列出当前目录文件  
@@ -287,12 +286,6 @@ filetype plugin indent on
 "打开文件类型检测, 加了这句才可以用智能补全
 set completeopt=longest,menu
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
-
-
-
 "NERDtee设定
 let NERDChristmasTree=1
 let NERDTreeAutoCenter=1
