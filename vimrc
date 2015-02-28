@@ -5,9 +5,6 @@ func! SaveInputData()
 	exec "w! /tmp/input_data"
 endfunc
 
-
-
-
 "colorscheme torte
 "colorscheme murphy
 "colorscheme desert 
@@ -15,15 +12,11 @@ endfunc
 "colorscheme elflord
 colorscheme ron
 
-
-
-
 "set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 "set termencoding=utf-8
 "set encoding=utf-8
 "set fileencodings=ucs-bom,utf-8,cp936
 "set fileencoding=utf-8
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 显示相关  
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -116,7 +109,7 @@ vmap <C-c> "+y
 "去空行  
 nnoremap <F2> :g/^\s*$/d<CR> 
 "比较文件  
-nnoremap <F4> :vert diffsplit<CR>
+nnoremap <F4> :vert diffsplit
 "新建标签  
 map <M-F2> :tabnew<CR>  
 "列出当前目录文件  
@@ -150,9 +143,6 @@ func! Rungdb()
 	exec "!g++ % -g -o %<"
 	exec "!gdb ./%<"
 endfunc
-
-
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""实用设置
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
