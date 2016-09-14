@@ -109,7 +109,7 @@ vmap <C-c> "+y
 "去空行  
 nnoremap <F2> :g/^\s*$/d<CR> 
 "比较文件  
-nnoremap <F4> :vert diffsplit
+"nnoremap <F4> :vert diffsplit
 "新建标签  
 map <M-F2> :tabnew<CR>  
 "列出当前目录文件  
@@ -289,3 +289,11 @@ let NERDTreeWinPos='left'
 let NERDTreeWinSize=31
 nnoremap f :NERDTreeToggle
 map <F7> :NERDTree<CR>  
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"TagBar 设定"
+nmap <F4> :TagbarToggle<CR>   " shortcut
+let g:tagbar_width = 20      " tagbar's width, default 20
+"let g:tagbar_left = 1       " on the left side
+let g:tagbar_right = 1     " on the right side
+autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx call tagbar#autoopen()
